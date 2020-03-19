@@ -1,10 +1,5 @@
-
 function factorial(n){
-    let sub = 1;
-    for(let i = 2; i <= n; i++ ){
-        sub *= i;
-    }
-    return sub;
+    return n === 0 ? 1 : n * factorial(n - 1);
 }
-const result = factorial(5);
+const result = factorial(4);
 console.log(result);
